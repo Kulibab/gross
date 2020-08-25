@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -37,10 +38,17 @@ nav {
     height: 60px;
 }
 
+.navWrap {
+    position: sticky;
+    top: 0;
+    padding-top: 10px;
+    z-index: 5;
+    background: #fff;
+}
+
 .topNav {
     background: #fff;
     font-size: 14px;
-    margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -80,16 +88,6 @@ nav {
     width: 90%;
   }
 
-.hireBtn {
-    padding: 5px 10px;
-    background: #fff;
-    outline: none;
-    border: 1px solid black;
-    border-radius: 3px;
-    font-size: 18px;
-    cursor: pointer;
-}
-
 .about {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/about.jpeg");
     height: 100vh;
@@ -108,10 +106,17 @@ nav {
     transform: translate(-50%, -50%);
     color: white;
     width: 90%;
+    max-width: 1000px;
 }
 
 .about h2{
-    margin: 20px;
+    margin: 20px 0;
+    font-size: 40px;
+}
+
+.about p {
+    font-size: 20px;
+    line-height: 1.5em;
 }
 
 .gallery {
@@ -132,7 +137,8 @@ nav {
 	display: block;
 	position: relative;
 	width: 100%;
-	overflow: hidden;
+    overflow: hidden;
+    padding-top: 50px;
 }
 .cssSlider .slides {
 	overflow: hidden;
@@ -156,20 +162,21 @@ nav {
 }
 
 .cssSlider .thumbnails {
-	display: block;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 	position: relative;
 	padding: 0;
 	margin: 0;
 	list-style: none;
 }
 .cssSlider .thumbnails > li {
-	float: left;
-    width: 20%;
-    padding: 10px 10px 10px 0;
+    width: 12%;
+    padding: 10px 0;
     box-sizing: border-box;
 }
 .cssSlider .thumbnails > li:last-child {
-    padding: 10px 0;
+    margin: 0;
 }
 
 .cssSlider .thumbnails > li > a {
@@ -187,6 +194,73 @@ nav {
 .cssSlider .slides li:not(:target) {
 	-webkit-animation: hidden 1s 1;
 }
+
+.music-container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.music-container ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.music-container ul li{
+    width: 18%;
+    height: 50px
+}
+
+.music-container ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#music {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/music.jpeg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.music-item {
+    background: #fff;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    padding: 20px 0;
+    border-radius: 5px;
+    border: 10px solid #fff;
+    box-sizing: border-box;
+}
+
+.music__apple {
+    background-image: url('../img/apple_music.png');
+}
+
+.music__youtube {
+    background-image: url('../img/youtube_music.png');
+}
+
+.music__spotify {
+    background-image: url('../img/spotify.png');
+}
+
+.music__deezer {
+    background-image: url('../img/deezer.png');
+}
+
+.music__amazon {
+    background-image: url('../img/amazon.png');
+}
+
 @-webkit-keyframes slide {
 	0% {
 		-webkit-transform: translateX(-100%);
@@ -310,5 +384,9 @@ nav {
 
     .hero-image {
         height: calc(100vh - 137px);
+    }
+
+    .cssSlider .thumbnails > li {
+        width: 23%;
     }
 }
