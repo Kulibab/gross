@@ -50,62 +50,142 @@
         </div>
     </section>
     <section class="gallery" id='gallery'>
-        <div class="container">
-            <div class="cssSlider">
-                <ul class="slides">
-                    <li id="slide1"><img src="./img/1-min.png" alt="" /></li>
-                    <li id="slide2"><img src="./img/2-min.png" alt="" /></li>
-                    <li id="slide3"><img src="./img/3-min.png" alt="" /></li>
-                    <li id="slide4"><img src="./img/4-min.png" alt="" /></li>
-                    <li id="slide5"><img src="./img/5-min.png" alt="" /></li>
-                    <li id="slide6"><img src="./img/6-min.png" alt="" /></li>
-                    <li id="slide7"><img src="./img/7-min.png" alt="" /></li>
-                    <li id="slide8"><img src="./img/8-min.png" alt="" /></li>
-                </ul>
-                <ul class="thumbnails">
-                    <li><a href="#slide1"><img src="./img/1-min.png" /></a></li>
-                    <li><a href="#slide2"><img src="./img/2-min.png" /></a></li>
-                    <li><a href="#slide3"><img src="./img/3-min.png" /></a></li>
-                    <li><a href="#slide4"><img src="./img/4-min.png" /></a></li>
-                    <li><a href="#slide5"><img src="./img/5-min.png" /></a></li>
-                    <li><a href="#slide6"><img src="./img/6-min.png" /></a></li>
-                    <li><a href="#slide7"><img src="./img/7-min.png" /></a></li>
-                    <li><a href="#slide8"><img src="./img/8-min.png" /></a></li>
-                </ul>
+        <div class="slider-container">
+            <div class="mySlides">
+              <div class="numbertext">1 / 8</div>
+              <img src="./img/1-min.png" style="width:100%">
             </div>
-        </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 8</div>
+              <img src="./img/2-min.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 8</div>
+              <img src="./img/3-min.png" style="width:100%">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">4 / 8</div>
+              <img src="./img/4-min.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 8</div>
+              <img src="./img/5-min.png" style="width:100%">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">6 / 8</div>
+              <img src="./img/6-min.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 8</div>
+                <img src="./img/7-min.png" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">8 / 8</div>
+                <img src="./img/8-min.png" style="width:100%">
+              </div>
+              
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="./img/1-min.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./img/2-min.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./img/3-min.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./img/4-min.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./img/5-min.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+              </div>    
+              <div class="column">
+                <img class="demo cursor" src="./img/6-min.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./img/7-min.png" style="width:100%" onclick="currentSlide(7)" alt="Snowy Mountains">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./img/8-min.png" style="width:100%" onclick="currentSlide(8)" alt="Snowy Mountains">
+              </div>
+            </div>
+          </div>
     </section>
     <section id="music">
         <div class="music-container">
             <ul>
-                <li class="music__apple music-item">
-                    <a href="https://music.apple.com/ua/artist/nikita-gross/1491026659?l=ru" target="_blank">
+                <li>
+                    <a href="https://music.apple.com/ua/artist/nikita-gross/1491026659?l=ru" target="_blank" class="music__apple music-item">
                     </a>
                 </li>
-                <li class="music__youtube music-item">
-                    <a href="https://music.youtube.com/channel/UCPraXjnXdEVkTsa0VccdxPw" target="_blank">
+                <li>
+                    <a href="https://music.youtube.com/channel/UCPraXjnXdEVkTsa0VccdxPw" target="_blank" class="music__youtube music-item">
                     </a>
                 </li>
-                <li class="music__spotify music-item">
-                    <a href="https://open.spotify.com/artist/0fRfaRkJuMIXBgH77WLWAE?si=8zD8_48nS9iogEs_jaVCNg"
+                <li>
+                    <a href="https://open.spotify.com/artist/0fRfaRkJuMIXBgH77WLWAE?si=8zD8_48nS9iogEs_jaVCNg" class="music__spotify music-item"
                         target="_blank">
                     </a>
                 </li>
-                <li class="music__deezer music-item">
-                    <a href="https://www.deezer.com/ru/artist/80805422" target="_blank">
+                <li>
+                    <a href="https://www.deezer.com/ru/artist/80805422" target="_blank" class="music__deezer music-item">
                     </a>
                 </li>
-                <li class="music__amazon music-item">
-                    <a href="https://music.amazon.com/artists/B082L3B2M2?tab=CATALOG" target="_blank">
+                <li>
+                    <a href="https://music.amazon.com/artists/B082L3B2M2?tab=CATALOG" target="_blank" class="music__amazon music-item">
                     </a>
                 </li>
             </ul>
         </div>
     </section>
     <footer class="footer" id='contact'>
-
     </footer>
     <script src="js/index.js"></script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        //   captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
 </body>
 
 </html>
